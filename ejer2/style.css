@@ -2,15 +2,31 @@
     margin:0px;
 }
 td{
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     text-align: center
+    
 }
-td:hover{
-    background-color: rgba(2555, 0, 0, 0.5)
+.hide{
+    visibility: hidden;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-tr:nth-child(odd) td:nth-child(even),
-tr:nth-child(even) td:nth-child(odd){
+
+td:hover .hide{
+    visibility: visible;
+    background-color: rgba(2555, 0, 0, 0.5);
+    
+}
+td:hover {
+    visibility: visible;
+    background-color: rgba(2555, 0, 0, 0.5);
+    
+}
+.black{
   background-color: black;
   color: white;
 }
